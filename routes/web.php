@@ -30,7 +30,6 @@ Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 // Route untuk User
 Route::get('/checkout/{product}', [DashboardController::class, 'showCheckoutForm'])->name('checkout.form');
 Route::post('/checkout', [DashboardController::class, 'checkout'])->name('checkout');
-
 Route::get('/transactions', [DashboardController::class, 'transactions'])->name('transactions');
 
 // Route untuk Admin
