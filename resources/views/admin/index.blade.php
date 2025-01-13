@@ -12,21 +12,21 @@
             <div class="bg-white p-6 rounded-lg shadow-md">
                 <h2 class="text-xl font-semibold text-gray-800">Users</h2>
                 <p class="mt-2 text-gray-600">Manage all users</p>
-                <a href="#" class="mt-4 inline-block bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700">View Users</a>
+                <a href="/admin/users" class="mt-4 inline-block bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700">View Users</a>
             </div>
 
             <!-- Products Card -->
             <div class="bg-white p-6 rounded-lg shadow-md">
                 <h2 class="text-xl font-semibold text-gray-800">Products</h2>
                 <p class="mt-2 text-gray-600">Manage all products</p>
-                <a href="#" class="mt-4 inline-block bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700">View Products</a>
+                <a href="/admin/products" class="mt-4 inline-block bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700">View Products</a>
             </div>
 
             <!-- Transactions Card -->
             <div class="bg-white p-6 rounded-lg shadow-md">
                 <h2 class="text-xl font-semibold text-gray-800">Transactions</h2>
                 <p class="mt-2 text-gray-600">Manage all transactions</p>
-                <a href="#" class="mt-4 inline-block bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700">View Transactions</a>
+                <a href="/admin/transactions" class="mt-4 inline-block bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700">View Transactions</a>
             </div>
         </div>
     </div>
