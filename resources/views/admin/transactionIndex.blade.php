@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.admin')
 
 @section('title', 'All Transactions')
 
@@ -19,6 +19,7 @@
                             <th class="py-2 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-600">Total</th>
                             <th class="py-2 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-600">Status</th>
                             <th class="py-2 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-600">Date</th>
+                            <th class="py-2 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-600">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -40,7 +41,11 @@
                                 </td>
                                 <td class="py-2 px-4 border-b border-gray-200">{{ $transaction->created_at->format('Y-m-d') }}</td>
                                 <td class="py-2 px-4 border-b border-gray-200">
-                                    {{-- <a href="{{ route('#', $transaction->id) }}" class="text-blue-600 hover:underline">View</a> --}}
+                                    <form method="POST" action="{{ route('admin.transactions.destroy', $transaction->transaction_id) }}">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="text-red-600 hover:underline" onclick="return confirm('Are you sure you want to delete this transaction?')">Delete</button>
+                                    </form>
                                 </td>
                             </tr>
                         @endforeach

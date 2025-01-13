@@ -21,4 +21,13 @@ class AdminTransactionController extends Controller
 
         return redirect()->route('admin.transactions.index')->with('success', 'Transaction status updated successfully.');
     }
+
+    public function destroy($transaction_id)
+    {
+        $transaction = Transaction::findOrFail($transaction_id);
+        $transaction->delete();
+
+        return redirect()->route('admin.transactions.index')->with('success', 'Transaction deleted successfully.');
+    }
+
 }

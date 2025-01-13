@@ -55,6 +55,8 @@ Route::middleware(['auth', 'admin'])->group(function () {
     // Route untuk Admin Transaction
     Route::get('/admin/transactions', [AdminTransactionController::class, 'index'])->name('admin.transactions.index');
     Route::put('/admin/transactions/{transaction}', [AdminTransactionController::class, 'update'])->name('admin.transactions.update');
+    Route::delete('/admin/transactions/{transaction_id}', [AdminTransactionController::class, 'destroy'])->name('admin.transactions.destroy');
+
 });
 // Route untuk Fallback jika route tidak ditemukan
 Route::fallback(function () {
