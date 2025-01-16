@@ -28,6 +28,7 @@
         </div>
     </div>
     <!-- tets -->
+     <!-- test 2 -->
     <!-- Products Section -->
     <div id="products" class="mt-16 container mx-auto">
         <h2 class="text-4xl font-bold text-gray-800 text-center mb-12">Pilihan Segar Kami 🍎</h2>
