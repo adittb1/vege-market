@@ -39,7 +39,7 @@
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition transform hover:scale-105">
                     <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" class="w-full h-48 object-cover">
                     <div class="p-5">
-                        <h3 class="text-lg font-semibold text-gray-800 truncate">{{ $product->name }}</h3>
+                        <h3 class="text-lg font-semibold text-gray-800 truncate">{{ $product->product_name }}</h3>
                         <p class="text-gray-600 mt-2 text-sm truncate">{{ Str::limit($product->description, 50) }}</p>
                         <div class="mt-4 flex items-center justify-between">
                             <span class="text-green-700 font-bold text-xl">${{ $product->price }}</span>
